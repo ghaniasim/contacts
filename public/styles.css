@@ -1,1 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 
+html {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  min-height: 90%;
+}
+
+body {
+  background: #eee;
+  padding: 0 16px;
+  margin-bottom: 2.5rem;
+  background-image: url("https://www.transparenttextures.com/patterns/batthern.png");
+}
+
+header {
+  background-color: #721ca3;
+  margin: auto -16px;
+  padding: 16px 32px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+  color: #fff;
+  font-family: "McLaren", cursive;
+  font-weight: 200;
+}
+
+.Card {
+  margin: 30px;
+  width: 300px;
+  height: 380px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px 1px black;
+  overflow: hidden;
+  float: left;
+}
+
+.upper-container {
+  height: 100px;
+  background: linear-gradient(to left, #2d00f7, #ff0291);
+}
+
+.image-container img {
+  background: white;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  padding: 5px;
+  transform: translate(95px, 45px);
+}
+
+img {
+  border: 2px solid #8e00b9;
+}
+
+.lower-container {
+  margin-top: 60px;
+  height: 200px;
+  background: white;
+  text-align: center;
+}
+
+.lower-container h3,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.lower-container h3 {
+  color: #8e00b9;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.lower-container h6 {
+  color: #ff0291;
+  font-size: 0.7rem;
+}
+
+.lower-container p {
+  color: #2f2de2;
+  margin: 1.5rem;
+  text-decoration: underline;
+}
+
+button {
+  margin: 1rem;
+  margin-top: 0;
+  color: #2f2d2e;
+  font: bold;
+  background-color: white;
+  border: 2px solid #8e00b9;
+  padding: 0.6rem;
+  border-radius: 6px;
+  transition-duration: 0.5s;
+  animation: ease-in-out;
+}
+
+button:hover {
+  background-image: linear-gradient(to left, #2d00f7, #ff0291);
+  transform: scale(1.2);
+  border: none;
+  color: white;
+}
