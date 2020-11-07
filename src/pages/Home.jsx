@@ -1,11 +1,10 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Header from "./Header";
-import Card from "./Card";
+import Header from "../components/Header";
+import Card from "../components/Card";
 
 function Home() {
   const [users, setUsers] = useState(null);
-
   const url = "https://jsonplaceholder.typicode.com/users";
 
   useEffect(() => {
@@ -14,10 +13,6 @@ function Home() {
     });
   }, [url]);
 
-  if (users) {
-    console.log(users);
-  }
-
   return (
     <div>
       <Header />
@@ -25,6 +20,7 @@ function Home() {
         users.map((user) => (
           <Card
             key={user.id}
+            id={user.id}
             name={user.name}
             username={user.username}
             website={user.website}

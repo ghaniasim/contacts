@@ -1,7 +1,14 @@
 import React from "react";
+import { useHistory } from "react-router-dom";
 import Button from "./Button";
 
 function Card(props) {
+  const history = useHistory();
+
+  function handleClick() {
+    history.push(`/details/${props.id}`);
+  }
+
   return (
     <div className="Card">
       <div className="upper-container">
@@ -18,7 +25,7 @@ function Card(props) {
         <h3>{props.name}</h3>
         <h6>@{props.username}</h6>
         <p>https://{props.website}</p>
-        <Button title="More details" />
+        <Button title="More details" handleClick={handleClick} />
       </div>
     </div>
   );

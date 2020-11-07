@@ -109,3 +109,24 @@ button:hover {
   border: none;
   color: white;
 }
+
+.detail-container {
+  background: white;
+  margin-top: 10px;
+  width: 35%;
+  border: 3px solid #8e00b9;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.detail-inner-container ul,
+li,
+p {
+  color: #8e00b9;
+  margin-left: 30px;
+  padding: 5px;
+}
+
+.detail {
+  color: #ff0291;
+}
